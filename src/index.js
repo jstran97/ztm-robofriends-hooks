@@ -4,12 +4,8 @@ import './index.css';
 import App from './containers/App'; // same as App from './App.js';
 // import Card from './Card';
  // same as Card from './Card.js';
-
-import CardList from './components/CardList';
-
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
-import { robots } from './robots';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
