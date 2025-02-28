@@ -1,4 +1,4 @@
-# Zero to Mastery (ZTM) Tutorial for creating React Web Application:
+Zero to Mastery (ZTM) Tutorial for creating React Web Application:
 
 1. Clone this repo
 2. Run `npm install`
