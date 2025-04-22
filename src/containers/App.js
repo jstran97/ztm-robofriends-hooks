@@ -27,12 +27,12 @@ function App() {
             .then(users => {setRobots(users)});
 
         console.log(robots, searchField, clickCount);
-    }, []) // useEffect() runs only when a specifically listed state variable's state changes (i.e, if [clickCount] and clickCount num gets incremented)
+    }, [clickCount]) // useEffect() runs only when a specifically listed state variable's state changes (i.e, if [clickCount] and clickCount num gets incremented)
 
 
     const onSearchChange = (event) => {
         console.log(event.target.value);
-        
+
         // this.setState({ searchField: event.target.value });
         setSearchField(event.target.value);
     }
@@ -55,9 +55,9 @@ function App() {
         return (
             <div className='tc'>
                 <h1 className='f1'>RoboFriends</h1>
-    
+
                 {/*  // For useEffect() code experiment + useEffect() usage understanding */}
-                <button onClick={() => setClickCount(clickCount+1)}>Click Me!</button>
+                <button onClick={() => setClickCount(clickCount+1)}>Click Me to Count!</button>
 
                 <SearchBox searchChange={onSearchChange}/>
                 <Scroll>
@@ -66,8 +66,6 @@ function App() {
             </div>
         );
     }
-
-    
 }
 
 export default App;

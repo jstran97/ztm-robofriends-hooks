@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './containers/App'; // same as App from './App.js';
+import App from './containers/App'; // same ./containers/App.js';
 // import Card from './Card';
- // same as Card from './Card.js';
+// same as Card from './Card.js';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 
