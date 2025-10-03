@@ -9,6 +9,26 @@ body {
   background: linear-gradient(to right, rgb(113, 189, 168), rgb(240, 212, 110));
 }
 
+/*
+How clamp() works:
+
+clamp(min, preferred, max)
+Example: clamp(14px, 1.5vw, 18px) means: use 1.5% of viewport width, but never smaller than 14px or larger than 18px
+
+This creates fluid typography that smoothly scales with the viewport instead of jumping at breakpoints. The Tachyons classes (f4 f3-m f2-l) will still work on top of this as overrides if you want specific sizes at certain breakpoints.
+ */
+h1 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+}
+
+p {
+  font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

@@ -37,17 +37,11 @@ function App() {
         setSearchField(event.target.value);
     }
 
-
-    // const { robots, searchField } = this.state;
-
     const filteredRobots = robots.filter(robot => {
         return robot.name.toLowerCase().includes(searchField.toLowerCase());
     })
 
-
-
     // console.log("filteredRobots: ", filteredRobots);
-
     if (robots.length === 0) {
         return <h1>Loading...</h1>
     }
@@ -56,8 +50,8 @@ function App() {
             <div className='tc'>
                 <h1 className='f1'>RoboFriends</h1>
 
-                {/*  // For useEffect() code experiment + useEffect() usage understanding */}
-                <button onClick={() => setClickCount(clickCount+1)}>Click Me to Count!</button>
+                 {/* // For useEffect() code experiment + useEffect() usage understanding
+                <button onClick={() => setClickCount(clickCount+1)}>Click Me to Count!</button> */}
 
                 <SearchBox searchChange={onSearchChange}/>
                 <Scroll>
